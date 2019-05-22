@@ -64,8 +64,8 @@
               <div class="slide-content align-left">
                 <div class="container">
                     <h2 class="mb-0">Ayudamos a generar</h2>
-                  <h1 class="mt-0">mejores negocios</h1>
-                  <p><a class="btn btn-light-out upper light-bg" href="#contacto" data-scroll="true">Contacto</a>
+                    <h1 class="mt-0">mejores negocios</h1>
+                    <p><a class="btn btn-light-out upper light-bg" href="#contacto" data-scroll="true">Contacto</a>
                   </p>
                 </div>
               </div>

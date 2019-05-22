@@ -3,15 +3,15 @@ $(document).ready(function(){
     $.get(api+'api/v1/content', function(data){
         if(data.status == 'ok'){
             var content = data.data;
-            console.log(content);
-
+            
             //Servicios
             var html_servicios = '';
             content.servicios.forEach(servicio => {
+                console.log(servicio.icono)
                 html_servicios += `
                 <div class="col-md-3 col-sm-6">
                     <div class="icon-box boxed-style" data-animation="fadeInRight">
-                        <div class="animated-icon" data-icon="${api}${servicio.icono}" data-custom-color="#007aff"></div>
+                        <div class="animated-icon" data-icon="assets/images/${servicio.icono}" data-custom-color="#007aff"></div>
                         <div class="ib-content">
                         <h4>${servicio.titulo}</h4>
                         <p>${servicio.descripcion}</p>
@@ -83,6 +83,10 @@ $(document).ready(function(){
             $('#content_contactos_3').html(html_contactos_horarios2);
             $('#content_contactos_4').html(html_contactos_telefonos2);
             $('#content_contactos_5').html(html_contactos_correos2);
+
+            mainFunctions.initVivus();
+            mainFunctions.initSlick();
+            mainFunctions.initAnimation();
         };
     });
 
