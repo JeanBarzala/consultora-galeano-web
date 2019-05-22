@@ -36,8 +36,8 @@
       <div id="wrapper">
           <div id="top-bar">
             <div class="container">
-                <h4 class="top-horario"><i class="hc-time"></i> Lun - Vie 08:00 - 18:00</h4> 
-                <h4 class="top-contacto"><i class="hc-call"></i><a href="tel:+59521453361">(021) 453 361</a></h4>
+                <h4 class="top-horario" id="content_contactos_3"><i class="hc-time"></i></h4> 
+                <h4 class="top-contacto" id="content_contactos_4"><i class="hc-call"></i></h4>
                 <div class="menu-item">
                 <!--<div class="header-socials">
                   <ul>
@@ -49,8 +49,8 @@
                     </li>
                   </ul>
                 </div>-->
-              </div>
-                <h4 class="top-email"><i class="hc-mail-alt"></i><a href="mailto:contacto@consultoragaleano.com.py">contacto@consultoragaleano.com.py</a></h4>
+                </div>
+                <h4 class="top-email" id="content_contactos_5"></h4>
                 
            </div>
         </div>
@@ -121,43 +121,8 @@
             <p class="fw-300">Brindamos <span class="fw-500 black-text">servicios personalizados</span> de alto nivel técnico para la solución de necesidades de las empresas y la optimización de sus recursos.</p>
           </div>
           <div class="section-content">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="icon-box boxed-style" data-animation="fadeInRight">
-                  <div class="animated-icon" data-icon="assets/images/icons/todolist-pen.svg" data-custom-color="#007aff"></div>
-                  <div class="ib-content">
-                    <h4>Tributarios e Impositivos</h4>
-                    <p> IRASIS, IRAGRO, Selectivo al consumo, IVA, Impuesto a la Renta del Pequeño Contribuyente, Impuesto a la Renta Personal, Obligaciones Municipales.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="icon-box boxed-style" data-animation="fadeInRight" data-delay="300">
-                  <div class="animated-icon" data-icon="assets/images/icons/layers-alt.svg" data-custom-color="#007aff"></div>
-                  <div class="ib-content">
-                    <h4>Contables</h4>
-                    <p>Un verdadero soporte administrativo enfocado netamente a administrar sus actividades productivas y tareas contables.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="icon-box boxed-style" data-animation="fadeInRight" data-delay="600">
-                  <div class="animated-icon" data-icon="assets/images/icons/magnifier.svg" data-custom-color="#007aff"></div>
-                  <div class="ib-content">
-                    <h4>Auditoría</h4>
-                    <p>Brindamos una ágil y exigente auditoría tanto externa como operativa para evaluar el funcionamiento de su empresa.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="icon-box boxed-style" data-animation="fadeInRight" data-delay="900">
-                  <div class="animated-icon" data-icon="assets/images/icons/graph-3.svg" data-custom-color="#007aff"></div>
-                  <div class="ib-content">
-                    <h4>Área Laboral y Previsional</h4>
-                    <p>Presentamos a su empresa el mejor servicio en manejo confidencial de información disponible para el área de trabajo.</p>
-                  </div>
-                </div>
-              </div>
+            <div class="row" id="content_servicios">
+              
             </div>
           </div>
         </div>
@@ -200,33 +165,8 @@
           <section id="clientes">
             <div class="container">
               <div class="row pt-25 pb-25">
-                <div class="client-carousel carousel" data-slick="{&quot;slidesToShow&quot;: 4, &quot;dots&quot;: false}">
-                  <div class="carousel-item">
-                    <figure>
-                      <img src="assets/imagenes/clientes/cliente-1.jpg" alt="logo de cliente">
-                    </figure>
-                  </div>
-                  <div class="carousel-item">
-                    <figure>
-                      <img src="assets/imagenes/clientes/cliente-2.jpg" alt="logo de cliente">
-                    </figure>
-                  </div>
-                  <div class="carousel-item">
-                    <figure>
-                      <img src="assets/imagenes/clientes/cliente-3.jpg" alt="logo de cliente">
-                    </figure>
-                  </div>
+                <div id="content_clientes" class="client-carousel carousel" data-slick="{&quot;slidesToShow&quot;: 4, &quot;dots&quot;: false}">
                   
-                  <div class="carousel-item">
-                    <figure>
-                      <img src="assets/imagenes/clientes/cliente-5.jpg" alt="logo de cliente">
-                    </figure>
-                  </div>
-                  <div class="carousel-item">
-                    <figure>
-                      <img src="assets/imagenes/clientes/cliente-6.jpg" alt="logo de cliente">
-                    </figure>
-                  </div>
                   
                 </div>
               
@@ -358,12 +298,9 @@
                         <img src="assets/imagenes/logo/logo-light.png" alt="Galeano Logo">
                       </figure>
                       <div class="textwidget">
-                        <p>
-                          <strong>Dirección:</strong> 14 de Mayo Nº 870 entre Piribebuy y Humaitá.<br>
-                            Edificio Medidian, Bloque B, 1er. Piso - Asunción. 
-                            Asunción<br>
-                            <strong>Horario:</strong> Lunes a Viernes: 08:00 a 18:00 hs<br>
-                            <strong>Teléfono: </strong><a href="tel:+59521453361" target="_blank" class="white-text">021 453 361</a></p>
+                        <p id="content_contactos_1">
+                            
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -371,15 +308,7 @@
                     <div class="widget">
                       <h5>Contactos</h5>
                       <div class="menu-footer">
-                        <ul>
-                          <li> <a href="mailto:hola@consultoragaleano.com.py" target="_blank" >hola@consultoragaleano.com.py</a>
-                          </li>
-                          <li><a href="mailto:reclamos@consultoragaleano.com.py" target="_blank" >reclamos@consultoragaleano.com.py</a>
-                          </li>
-                            <li><a href="mailto:soporte@consultoragaleano.com.py" target="_blank" >soporte@consultoragaleano.com.py</a>
-                          </li>
-                            <li> <a href="mailto:consultas@consultoragaleano.com.py" target="_blank" >consultas@consultoragaleano.com.py</a>
-                          </li>
+                        <ul id="content_contactos_2">
                         </ul>
                       </div>
                     </div>
@@ -437,6 +366,7 @@
     <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
     <script type="text/javascript" src="assets/js/jquery.mb.YTPlayer.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/content.js"></script>
   </body>
 
 </html>
