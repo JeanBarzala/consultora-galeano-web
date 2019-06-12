@@ -129,13 +129,13 @@ $(document).ready(function(){
                         <article class="card-post">
                           <div class="card-post-wrapper">
                             <div class="card-post-image">
-                              <a href="blog-single.html?id=${noticia.id}">
+                              <a href="posteo.php?id=${noticia.id}">
                                 <img src="${api}${noticia.img_portada}" alt="">
                               </a>
                             </div>
                             <div class="card-post-content">
                               <div class="post-body">
-                                <h3><a href="blog-single.html?id=${noticia.id}">${noticia.titulo}</a></h3>
+                                <h3><a href="posteo.php?id=${noticia.id}">${noticia.titulo}</a></h3>
                                 <p>${noticia.descripcion_corta}</p>
                               </div>
                               <div class="post-footer">
@@ -163,6 +163,10 @@ function getContent(id){
             $('#post-title').html(noticia.titulo);
             $('#post-creador').html(noticia.creador);
             $('#post-body').html(noticia.contenido);
+            $('#content-img-portada').css({
+                'background-image': "url('" + noticia.img_portada + "')"
+            });
+            initParallax();
         }
     })
 }

@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
-    <title>Bezel | Creative Multi-Purpose HTML Template</title>
+    <title>Consultora Galeano</title>
+   <title>Consultora Galeano</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="assets/imagenes/logo/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/imagenes/logo/favicon.png" type="image/x-icon">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Consultora Galeano">
+    <meta name="keywords" content="Contabilidad, consultores contables, contables, consultor, iva, irp, impuesto, irasi, paraguay, asuncion" />
+    <meta name="description" content="Brindamos servicios contables personalizados de alto nivel técnico para la solución de necesidades de las empresas y la optimización de sus recursos." />
+    <meta property="og:title" content="Consultora Galeano"/>
+    <meta property="og:url" content="https://consultoragaleano.com.py">
+    <meta property="og:image" content="https://consultoragaleano.com.py/assets/imagenes/bg/bgc.jpg"/>
+    <meta property="og:site_name" content="Consultora Galeano"/>
+    <meta property="og:description" content="Brindamos servicios contables personalizados de alto nivel técnico para la solución de necesidades de las empresas y la optimización de sus recursos."/>
     <link rel="stylesheet" href="assets/css/bundle.css">
     <link rel="stylesheet" href="assets/css/hody-icons.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Source+Sans+Pro:300,400|Kaushan+Script|Lora|Playfair+Display:700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+   
   </head>
 
   <body>
@@ -339,7 +350,7 @@
         <div class="row-parallax-bg">
           <div class="parallax-wrapper">
             <div class="parallax-bg">
-              <img src="images/bg-image-54.jpg" alt="">
+              <img src="" alt="imagen de fondo" id="post-img">
             </div>
           </div>
           <div class="parallax-overlay"></div>
@@ -481,13 +492,13 @@
         <i class="hc-close"></i>
       </a>
     </div>
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
+   <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/bundle.js"></script>
     <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
     <script type="text/javascript" src="assets/js/jquery.mb.YTPlayer.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNGOsBBZo9vf0Tw4w6aJiilSTFVfQ5GPI"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/content.js"></script>
+  
     <script>
       $(document).ready(function(){
         const url = new URL(location.href);
