@@ -163,10 +163,13 @@ function getContent(id){
             $('#post-title').html(noticia.titulo);
             $('#post-creador').html(noticia.creador);
             $('#post-body').html(noticia.contenido);
+            
             $('#content-img-portada').css({
-                'background-image': "url('" + noticia.img_portada + "')"
+                'background-image': "url('" + api + noticia.img_portada.replace('\\','/') + "')"
             });
             initParallax();
+        }else{
+            window.location.href = "index";
         }
-    })
+    }).catch(e => window.location.href = "index");
 }

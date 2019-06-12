@@ -135,6 +135,7 @@ function initHomeSlider() {
     if ($homeSlider.data('disable-parallax')) {
       template = '<div class="slide-image" style="background-image: url(' + image + ')"></div>';
     }
+    
 
     $(slide).prepend(template);
     $(el).remove();
@@ -185,6 +186,8 @@ function initParallax() {
   $('.parallax-bg img').each(function(index, el) {
     var container = $(this).parent('.parallax-bg');
     var image = $(this).attr('src');
+    
+    $(container).attr('id', 'content-img-portada');
 
     $(container).css('background-image', 'url(' + image + ')');
 
