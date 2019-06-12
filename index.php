@@ -105,7 +105,7 @@
                                     <li data-animation="fadeInRight">Te simplifica la forma de visualizar y entender tus declaraciones de impuestos</li>
                                   </ul>
                                    
-                                    <a class="btn btn-dark btn-block mt-10" href="online" id="online">Ingresar al Sistema</a>
+                                    <a class="btn btn-dark btn-block mt-10" href="/system/client/" id="online">Ingresar al Sistema</a>
                                     
                               </div>
                           </div>
@@ -173,85 +173,26 @@
                 </div>
             </div>
           </section>
-         <!-- <section class="grey-bg" id="noticias">
+         <section class="grey-bg" id="noticias">
             <div class="container">
                 <div class="title">
                     <h6>Noticias</h6>
                     <hr class="fullwidth">
                 </div>
-              <div class="grid-posts-wrapper">
-                <article class="card-post">
-                  <div class="card-post-wrapper">
-                    <div class="card-post-image">
-                      <div class="post-category"><a href="#">Lifestyle</a>
-                      </div>
-                      <a href="#">
-                        <img src="assets/images/blog-1.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="card-post-content">
-                      <div class="post-body">
-                        <h3><a href="#">What's Coming to Netflix</a></h3>
-                        <p>Quae veritatis, quisquam ullam dolore quam in, consequatur, beatae delectus, fugit alias soluta nihil? Fuga placeat, similique non totam quisquam eos dolore.</p>
-                      </div>
-                      <div class="post-footer">
-                        <h6><span><i class="hc-clock"></i><span class="post-time">March 23, 2017</span></span><span>by<a href="#">Mike Ross</a></span></h6>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <article class="card-post">
-                  <div class="card-post-wrapper colored-bg" data-custom-bg="#1da1f2">
-                    <div class="card-post-content">
-                      <div class="card-post-icon"><i class="hc-quote"></i>
-                      </div>
-                      <div class="post-body">
-                        <blockquote>
-                          <p class="serif-font">The Internet is so big, so powerful and pointless that for some people it is a complete substitute for life.</p>
-                          <footer>Andrew Brown</footer>
-                        </blockquote>
-                      </div>
-                      <div class="post-footer">
-                        <h6><span><i class="hc-clock"></i><span class="post-time">March 23, 2017</span></span><span>by<a href="#">Mike Ross</a></span></h6>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <article class="card-post">
-                  <div class="card-post-wrapper">
-                    <div class="card-post-image">
-                      <div class="post-category"><a href="#" data-custom-bg="#ffbb44">Science</a>
-                      </div>
-                      <a href="#">
-                        <img src="assets/images/blog-2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="card-post-content">
-                      <div class="post-body">
-                        <h3><a href="#">The Desert Is Blooming</a></h3>
-                        <p>Quae veritatis, quisquam ullam dolore quam in, consequatur, beatae delectus, fugit alias soluta nihil? Fuga placeat, similique non totam quisquam eos dolore.</p>
-                      </div>
-                      <div class="post-footer">
-                        <h6><span><i class="hc-clock"></i><span class="post-time">March 23, 2017</span></span><span>by<a href="#">Mike Ross</a></span></h6>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+              <div id="content_noticias" class="grid-posts-wrapper">
+                <!--NOTICAS -->
+
               </div>
               <div class="blog-pagination">
                 <ul class="pagination">
-                  <li><span class="current-page">1</span>
+                  <li><a id="back_page_button" class="next-page" href="#"><i class="hc-arrow-round-back"></i></a>
                   </li>
-                  <li><a href="#">2</a>
-                  </li>
-                  <li><a href="#">3</a>
-                  </li>
-                  <li><a class="next-page" href="#"><i class="hc-arrow-round-forward"></i></a>
+                  <li><a id="next_page_button" class="next-page" href="#"><i class="hc-arrow-round-forward"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
-          </section>-->
+          </section>
           <section class="split-section" id="nosotros">
             <div class="side-background">
               <div class="col-md-6 col-sm-4 img-side img-right">

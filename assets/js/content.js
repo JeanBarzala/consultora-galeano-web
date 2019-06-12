@@ -1,13 +1,15 @@
+var api = 'http://localhost:8000/';
+//var api = 'https://consultoragaleano.com.py/api_public/';
+
 $(document).ready(function(){
-    var api = 'https://consultoragaleano.com.py/api_public/';
+    
     $.get(api+'api/v1/content', function(data){
         if(data.status == 'ok'){
             var content = data.data;
-            
+
             //Servicios
             var html_servicios = '';
             content.servicios.forEach(servicio => {
-                console.log(servicio.icono)
                 html_servicios += `
                 <div class="col-md-3 col-sm-6">
                     <div class="icon-box boxed-style" data-animation="fadeInRight">
@@ -90,5 +92,77 @@ $(document).ready(function(){
         };
     });
 
+    //Get noticias
+    var global_desde = 1;
+    getNoticias();
+
+    $('#back_page_button').click(function(e){
+        
+        e.preventDefault();
+
+        if(global_desde > 0){
+            global_desde -= 3;
+        }
+
+        getNoticias();
+    });
+
+    $('#next_page_button').click(function(e){
+
+        e.preventDefault();
+
+        global_desde += 3;
+        getNoticias();
+    });
+
+    //get noticias
+    function getNoticias(){
+        $.get(api+`api/v1/content-noticias?desde=${global_desde}`, function(data){
+            if(data.status == 'ok'){
+
+                var noticias = data.data
+                var html_noticias = '';
+
+                if(noticias.length > 0){
+                    noticias.forEach(noticia => {
+                        html_noticias += `
+                        <article class="card-post">
+                          <div class="card-post-wrapper">
+                            <div class="card-post-image">
+                              <a href="blog-single.html?id=${noticia.id}">
+                                <img src="${api}${noticia.img_portada}" alt="">
+                              </a>
+                            </div>
+                            <div class="card-post-content">
+                              <div class="post-body">
+                                <h3><a href="blog-single.html?id=${noticia.id}">${noticia.titulo}</a></h3>
+                                <p>${noticia.descripcion_corta}</p>
+                              </div>
+                              <div class="post-footer">
+                                <h6><span><i class="hc-clock"></i><span class="post-time">${noticia.fecha_creacion}</span></span><span>by<a href="#">${noticia.creador.toUpperCase()}</a></span></h6>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        `;
+                    });
+                    $('#content_noticias').html(html_noticias);
+                }
+            }
+        });
+
+    }
 });
 
+//get noticia content
+function getContent(id){
+    $.get(api+`api/v1/content-noticia/${id}`, function(data){
+        if(data.status == 'ok'){
+            const noticia = data.data;
+            $('#post-fecha').html(noticia.fecha_creacion);
+            $('#post-title').html(noticia.titulo);
+            $('#post-creador').html(noticia.creador);
+            $('#post-body').html(noticia.contenido);
+        }
+    })
+}
