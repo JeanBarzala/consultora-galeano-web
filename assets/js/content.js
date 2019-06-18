@@ -1,5 +1,5 @@
-var api = 'http://localhost:8000/';
-//var api = 'https://consultoragaleano.com.py/api_public/';
+//var api = 'http://localhost:8000/';
+var api = 'https://consultoragaleano.com.py/api_public/';
 
 $(document).ready(function(){
     
