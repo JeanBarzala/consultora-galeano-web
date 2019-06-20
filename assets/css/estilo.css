@@ -56,6 +56,16 @@ h4.top-email{
 #online{
     background: #0050ff !important;
 }
+.card-post-image{
+    display: block;
+    flex: none !important;
+    width: 100% !important;
+    height: 240px !important;
+   
+}
+.post-body{
+    min-height: 256px;
+}
 @media only screen and (max-width:992px){
     #top-bar{
         display: none;

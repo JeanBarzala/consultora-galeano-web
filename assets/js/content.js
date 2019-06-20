@@ -99,6 +99,8 @@ $(document).ready(function(){
     $('#back_page_button').click(function(e){
         
         e.preventDefault();
+        if (window.getSelection) {console.log('hika');window.getSelection().removeAllRanges();}
+        else if (document.selection) {console.log('aaaa');document.selection.empty();}
 
         if(global_desde > 0){
             global_desde -= 3;
@@ -110,6 +112,8 @@ $(document).ready(function(){
     $('#next_page_button').click(function(e){
 
         e.preventDefault();
+        if (window.getSelection) {window.getSelection().removeAllRanges();}
+        else if (document.selection) {document.selection.empty();}
 
         global_desde += 3;
         getNoticias();
@@ -128,18 +132,16 @@ $(document).ready(function(){
                         html_noticias += `
                         <article class="card-post">
                           <div class="card-post-wrapper">
-                            <div class="card-post-image">
-                              <a href="posteo.php?id=${noticia.id}">
-                                <img src="${api}${noticia.img_portada}" alt="">
-                              </a>
+                            <div class="card-post-image" style="background:url(${api}${noticia.img_portada})center center;background-size: cover;">
+                              
                             </div>
                             <div class="card-post-content">
                               <div class="post-body">
                                 <h3><a href="posteo.php?id=${noticia.id}">${noticia.titulo}</a></h3>
-                                <p>${noticia.descripcion_corta}</p>
+                                <p>${noticia.descripcion_corta.substr(0, 180)}...</p>
                               </div>
                               <div class="post-footer">
-                                <h6><span><i class="hc-clock"></i><span class="post-time">${noticia.fecha_creacion}</span></span><span>by<a href="#">${noticia.creador.toUpperCase()}</a></span></h6>
+                                <h6><span><i class="hc-clock"></i><span class="post-time">${noticia.fecha_creacion}</span></span></h6>
                               </div>
                             </div>
                           </div>

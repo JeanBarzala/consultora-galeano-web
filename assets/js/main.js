@@ -1,4 +1,3 @@
-
 'use strict';
 var MAIN = {};
 MAIN.guid = function() {
@@ -27,6 +26,7 @@ var $body = $('body');
 var $window = $(window);
 var $document = $(document);
 var $navBar = $('#navbar');
+var $clearBar = $('#clearBar');
 var $asideNav = $('#aside-nav');
 var $homeSlider = $('#home-slider');
 var $searchModal = $('#search-modal');
@@ -268,20 +268,23 @@ function initScroll() {
         $homeSlider.length
       ) {
         if ($window.width() > 991) {
-          if ($window.scrollTop() >= 150) {
-            $navBar.addClass('stick');
-          } else {
-            $navBar.removeClass('stick');
-          }
-
-          if ($firstSection.hasClass('section-bordered')) {
-            if ($window.scrollTop() <= 20) {
-              $body.addClass('top-spacing');
+            if ($window.scrollTop() >= 66) {
+                $navBar.addClass('stick');
+                $clearBar.addClass('aparecer');
+             
             } else {
-              $body.removeClass('top-spacing');
+              $navBar.removeClass('stick');
+                $clearBar.removeClass('aparecer');
+            }
+
+            if ($firstSection.hasClass('section-bordered')) {
+              if ($window.scrollTop() <= 20) {
+                $body.addClass('top-spacing');
+              } else {
+                $body.removeClass('top-spacing');
+              }
             }
           }
-        }
       }
 
       initParallax();

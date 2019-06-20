@@ -5155,6 +5155,7 @@ footer .form-group button:hover{
 .page-numbers > li span.prev-page {
   border-color: transparent;
   font-size: 20px;
+     transition: .5s;
 }
 .pagination > li > a i,
 .page-numbers > li > a i,
@@ -5169,6 +5170,7 @@ footer .form-group button:hover{
   background-color: #1f1f1f;
   color: #fff;
   border-color: #1f1f1f;
+    transition: .5s;
 }
 .pagination > li > a:focus,
 .page-numbers > li > a:focus,
@@ -5176,6 +5178,15 @@ footer .form-group button:hover{
 .page-numbers > li span:focus {
   background-color: transparent;
   color: #1f1f1f;
+}
+pagination > li > a:active,
+.page-numbers > li > a:active,
+.pagination > li span::active,
+.page-numbers > li span:active {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: #1f1f1f;
+    transition: .5s;
 }
 .pagination > li > a.current-page,
 .page-numbers > li > a.current-page,

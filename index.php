@@ -28,7 +28,9 @@
       <div class="centrize">
         <div class="v-center">
           <div id="mask">
-            <img src="assets/imagenes/etc/audio.svg" width="40" alt="">
+            <svg class="preloader-icon" width="34" height="38" viewbox="0 0 34 38">
+              <path class="preloader-path" stroke-dashoffset="0" d="M29.437 8.114L19.35 2.132c-1.473-.86-3.207-.86-4.68 0L4.153 8.114C2.68 8.974 1.5 10.56 1.5 12.28v11.964c0 1.718 1.22 3.306 2.69 4.165l10.404 5.98c1.47.86 3.362.86 4.834 0l9.97-5.98c1.472-.86 2.102-2.45 2.102-4.168V12.28c0-1.72-.59-3.306-2.063-4.166z"></path>
+            </svg>
           </div>
         </div>
       </div>
@@ -59,7 +61,7 @@
           <section id="home">
               <div id="home-slider">
           <div class="slide-item">
-            <img src="assets/imagenes/bg/bg.jpg" alt="Fondo de Pantalla">
+            <img src="assets/imagenes/bg/bg2.jpg" alt="Fondo de Pantalla">
             <div class="slide-wrap">
               <div class="slide-content align-left">
                 <div class="container">
@@ -229,78 +231,7 @@
               </div>
             </div>
         </section>
-          <footer id="footer">
-            <div class="footer-widgets" id="contacto">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4 col-sm-12">
-                    <div class="widget">
-                      <figure class="footer-logo mb-15">
-                        <img src="assets/imagenes/logo/logo-light.png" alt="Galeano Logo">
-                      </figure>
-                      <div class="textwidget">
-                        <p id="content_contactos_1">
-                            
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-12">
-                    <div class="widget">
-                      <h5>Contactos</h5>
-                      <div class="menu-footer">
-                        <ul id="content_contactos_2">
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-12">
-                    <div class="widget">
-                      <h5>Formulario de Contacto</h5>
-                      <form method="post">
-                          <div class="form-group">
-                            <input class="form-control input-sm" type="text" placeholder="Nombre">
-                         </div>
-                          <div class="form-group">
-                            <input class="form-control input-sm" type="email" placeholder="Email">
-                          </div>
-                          <div class="form-group">
-                              <textarea class="form-control" placeholder="Mensaje"></textarea>
-                          </div>
-                          <div class="form-group">
-                            <div class="checkout-submit">
-                              <button class="btn btn-dark btn-block" type="submit">Enviar</button>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer-copy">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <!--<ul class="social-list">
-                      <li class="social-item-linkedin"><a target="_blank" href="#"><i class="hc-linkedin"></i></a>
-                      </li>
-                      <li class="social-item-facebook"><a target="_blank" href="#"><i class="hc-facebook"></i></a>
-                      </li>
-                      <li class="social-item-instagram"><a target="_blank" href="#"><i class="hc-instagram"></i></a>
-                      </li>
-                    </ul>-->
-                      <p>Consultora Galeano 2019</p>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="copy-text">
-                      <p>Desarrollado por: <a href="https://imago.com.py" target="_blank">IMAGO</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
+          <?php include 'assets/inc/footer.php'; ?>
     </div>
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/bundle.js"></script>
