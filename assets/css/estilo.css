@@ -1,3 +1,12 @@
+.ocultar-algo{
+    visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.mostrar-algo{
+      visibility: visible;
+  opacity: 1;
+}
 #top-bar{
     width: 100%;
     padding: 15px 0px 12px 0px;

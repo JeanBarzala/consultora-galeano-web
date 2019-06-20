@@ -5183,10 +5183,10 @@ pagination > li > a:active,
 .page-numbers > li > a:active,
 .pagination > li span::active,
 .page-numbers > li span:active {
-  background-color: #1f1f1f;
-  color: #fff;
-  border-color: #1f1f1f;
-    transition: .5s;
+  background-color: #1f1f1f !important;
+  color: #fff !important;
+  border-color: #1f1f1f !important;
+    transition: .5s !important;
 }
 .pagination > li > a.current-page,
 .page-numbers > li > a.current-page,
