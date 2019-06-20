@@ -173,7 +173,7 @@
                 </div>
             </div>
           </section>
-         <section class="grey-bg" id="noticias">
+            <section class="grey-bg" id="noticias">
             <div class="container">
                 <div class="title">
                     <h6>Noticias</h6>

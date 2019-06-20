@@ -94,7 +94,7 @@ $(document).ready(function(){
 
     //Get noticias
     var global_desde = 1;
-    getNoticias();
+    getNoticias(true);
 
     $('#back_page_button').click(function(e){
         
@@ -120,9 +120,12 @@ $(document).ready(function(){
     });
 
     //get noticias
-    function getNoticias(){
+    function getNoticias(first=false){
         $.get(api+`api/v1/content-noticias?desde=${global_desde}`, function(data){
             if(data.status == 'ok'){
+                if(data.data.length == 0 && first){
+                    $('#noticias').css('display', 'none');
+                }
 
                 var noticias = data.data
                 var html_noticias = '';
