@@ -63,7 +63,7 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="copy-text">
-                      <p>Desarrollado por: <a href="https://imago.com.py" target="_blank">IMAGO</a></p>
+                      <p>Desarrollado por: <a href="https://imago.com.py" target="_blank" style="color:#0050ff">IMAGO</a></p>
                     </div>
                   </div>
                 </div>
