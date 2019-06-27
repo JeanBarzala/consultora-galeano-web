@@ -1,5 +1,5 @@
-//var api = 'http://localhost:8000/';
-var api = 'https://consultoragaleano.com.py/api_public/';
+var api = 'http://localhost:8000/';
+// var api = 'https://consultoragaleano.com.py/api_public/';
 
 $(document).ready(function(){
     
@@ -157,6 +157,90 @@ $(document).ready(function(){
         });
 
     }
+
+    //Send contact
+    $('#form-contact').submit(function(e){
+        e.preventDefault();
+
+        var name = $('#contact-name').val();
+        var email = $('#contact-email').val();
+        var message = $('#contact-message').val();
+
+        if(name.length === 0 || email.length === 0 || message.length === 0){
+            setError('Debes completar todos los campos.');
+            return false;
+        }
+
+        if(!isEmail(email)){
+            setError('Favor ingresar un email valido.');
+            return false;
+        }
+
+        //submit
+        $.ajax({
+            type: 'POST',
+            url: api+'api/v1/contact',
+            contentType: "application/json",
+            data: JSON.stringify({
+                contact: {
+                    name: name,
+                    email: email,
+                    message: message
+                }
+            }),
+            success: function(val){
+                if(val.status == 'ok'){
+                    successContact();
+                }else{
+                    errorContact();
+                }
+            },
+            error: function(e){
+                errorContact();
+            }
+        });
+    });
+
+    function successContact(){
+        Swal.fire({
+            title: 'Contacto enviado!',
+            text: 'Nos estaremos comunicando por tu email.',
+            type: 'success',
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 2000
+        });
+        $('#contact-name').val('');
+        $('#contact-email').val('');
+        $('#contact-message').val('');
+    }
+
+    function errorContact(){
+        Swal.fire({
+            title: 'Oopss!',
+            text: 'Hubo un error al procesar el formulario.',
+            type: 'error',
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 2000
+        });
+    }
+
+    function setError(msg){
+        $('#contact-error').html(msg);
+        setTimeout(() => {
+            $('#contact-error').html('');
+        }, 3000);
+    }
+
+    function isEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+
+    $('#an-noticias').click(function(){
+        $('#a-noticias').fadeOut();
+    });
 });
 
 //get noticia content

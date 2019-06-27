@@ -236,6 +236,7 @@
     <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
     <script type="text/javascript" src="assets/js/jquery.mb.YTPlayer.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/sweetalert2.js"></script>
     <script type="text/javascript" src="assets/js/content.js"></script>
   </body>
 

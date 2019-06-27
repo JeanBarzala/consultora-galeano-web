@@ -26,22 +26,23 @@
                   <div class="col-md-4 col-sm-12">
                     <div class="widget">
                       <h5>Formulario de Contacto</h5>
-                      <form method="post">
-                          <div class="form-group">
-                            <input class="form-control input-sm" type="text" placeholder="Nombre">
-                         </div>
-                          <div class="form-group">
-                            <input class="form-control input-sm" type="email" placeholder="Email">
+                      <form method="post" id="form-contact">
+                        <span id="contact-error"></span>
+                        <div class="form-group">
+                          <input id="contact-name" class="form-control input-sm" type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                          <input id="contact-email" class="form-control input-sm" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" class="form-control" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <div class="form-group">
+                          <div class="checkout-submit">
+                            <button class="btn btn-dark btn-block" type="submit">Enviar</button>
                           </div>
-                          <div class="form-group">
-                              <textarea class="form-control" placeholder="Mensaje"></textarea>
-                          </div>
-                          <div class="form-group">
-                            <div class="checkout-submit">
-                              <button class="btn btn-dark btn-block" type="submit">Enviar</button>
-                            </div>
-                          </div>
-                        </form>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
