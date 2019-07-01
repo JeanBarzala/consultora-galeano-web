@@ -239,7 +239,7 @@ $(document).ready(function(){
     }
 
     $('#an-noticias').click(function(){
-        $('#a-noticias').fadeOut();
+        $('#a-noticias').css('opacity', '0');
     });
 });
 

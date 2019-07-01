@@ -27,10 +27,11 @@
                 </li>
                 <li><a href="#servicios" data-scroll="true">Servicios</a>
                 </li>
+                  <li><a id="an-noticias" href="#noticias" data-scroll="true">Noticias<span id="a-noticias" > • </span></a>
+                </li>
                 <li><a href="#clientes" data-scroll="true">Clientes</a>
                 </li>
-                <li><a id="an-noticias" href="#noticias" data-scroll="true">Noticias<span id="a-noticias" > • </span></a>
-                </li>
+                
                 <li><a href="#nosotros" data-scroll="true">Nosotros</a>
                 </li>
                 <li><a href="#contacto" data-scroll="true">Contacto</a>
