@@ -128,52 +128,7 @@
         </div>
           
           </section>
-          <section class="colored-bg" data-custom-bg="#161c2d">
-            <div class="container">
-              <div class="title">
-                <h6>Nuestros números hablan</h6>
-                <hr class="fullwidth">
-                
-              </div>
-              <div class="section-content">
-                <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-4 center-align" >
-                    <div class="counter align-center" data-animation="zoomOut">
-                      <div class="counter-content b-0">
-                        <h5><span class="number-count" data-count="20">20</span></h5><span>Años de experiencia</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4 center-align">
-                    <div class="counter align-center" data-animation="zoomOut" data-delay="300">
-                      <div class="counter-content b-0">
-                        <h5><span class="number-count" data-count="54">54</span>+</h5><span>Clientes</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4 center-align">
-                    <div class="counter align-center" data-animation="zoomOut" data-delay="600">
-                      <div class="counter-content b-0">
-                        <h5><span class="number-count" data-count="10">10</span>+</h5><span>Funcionarios por empresa</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="clientes">
-            <div class="container">
-              <div class="row pt-25 pb-25">
-                <div id="content_clientes" class="client-carousel carousel" data-slick="{&quot;slidesToShow&quot;: 4, &quot;dots&quot;: false}">
-                  
-                  
-                </div>
-              
-                </div>
-            </div>
-          </section>
-            <section class="grey-bg" id="noticias">
+          <section class="grey-bg" id="noticias">
             <div class="container">
                 <div class="title">
                     <h6>Noticias</h6>
@@ -191,6 +146,17 @@
                   </li>
                 </ul>
               </div>
+            </div>
+          </section>
+          <section id="clientes">
+            <div class="container">
+              <div class="row pt-25 pb-25">
+                <div id="content_clientes" class="client-carousel carousel" data-slick="{&quot;slidesToShow&quot;: 4, &quot;dots&quot;: false}">
+                  
+                  
+                </div>
+              
+                </div>
             </div>
           </section>
           <section class="split-section" id="nosotros">
@@ -229,6 +195,40 @@
               </div>
             </div>
         </section>
+          <section class="colored-bg" data-custom-bg="#161c2d">
+            <div class="container">
+              <div class="title">
+                <h6>Nuestros números hablan</h6>
+                <hr class="fullwidth">
+                
+              </div>
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-4 center-align" >
+                    <div class="counter align-center" data-animation="zoomOut">
+                      <div class="counter-content b-0">
+                        <h5><span class="number-count" data-count="20">20</span></h5><span>Años de experiencia</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 center-align">
+                    <div class="counter align-center" data-animation="zoomOut" data-delay="300">
+                      <div class="counter-content b-0">
+                        <h5><span class="number-count" data-count="54">54</span>+</h5><span>Clientes</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 center-align">
+                    <div class="counter align-center" data-animation="zoomOut" data-delay="600">
+                      <div class="counter-content b-0">
+                        <h5><span class="number-count" data-count="10">10</span>+</h5><span>Funcionarios por empresa</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <?php include 'assets/inc/footer.php'; ?>
     </div>
     <script type="text/javascript" src="assets/js/jquery.js"></script>

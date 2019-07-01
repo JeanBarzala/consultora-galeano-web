@@ -375,7 +375,7 @@ function initGeneral() {
     }
   });
 
-  $('<div class="footer-spacer"></div>').insertAfter('#footer');
+//  $('<div class="footer-spacer"></div>').insertAfter('#footer');
 
   $('.open-search-form').on('click', function(e) {
     e.preventDefault();
